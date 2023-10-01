@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+body{
+    background-color: rgba(21, 14, 40, 1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.clash_display{
+    font-family: 'Clash Display', sans-serif;
+    color: rgba(212, 52, 254, 1);
+}
+
+/* Navbar styling */
+.navbar-brand{
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 500;
+    margin-right: 10rem;
+    font-size: 1.6rem;
+}
+
+.navbar-nav .nav-item > a{
+    color: white;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-item-contact > a {
+    background-image: linear-gradient(135deg, rgba(144, 58, 255, 1), rgba(255, 38, 185, 1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.nav_bar_button{
+    background-image: linear-gradient(
+        135deg,
+        rgba(144, 58, 255, 1),
+        rgba(212, 52, 254, 1),
+        rgba(255, 38, 185, 1),
+        rgba(254, 52, 185, 1)
+    );
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav_ul{
+    margin-right: 6rem;
+}
+
+.nav_ul > ul li{
+    margin-right: 2rem;
+}
+
+/* Register left */
+.register h5, .register_right p, .reg_share, .contact_right .paragraph-text{ 
+    color: rgba(212, 52, 254, 1);
+}
+
+.register:not(h5),
+.contact{
+    color: #fff;
+    font-size: small;
+}
+
+.register_right,
+.contact_right {
+    background: rgba(255, 255, 255, 0.03); 
+    border-radius: 5px; 
+    backdrop-filter: blur(6px); 
+    padding: 3rem 5rem; 
+    margin: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+  /* .register_left p{
+    font-weight: 100;
+    font-size:  16px;
+  } */
+
+  /* Style for input elements within .register_right */
+  .register_right .form-control {
+    background: rgba(255, 255, 255, 0.1); 
+    border: 1px solid #fff; 
+    margin-bottom: 10px; 
+    padding: 5px; 
+  }
+
+  .register_right .form-control::placeholder{
+    font-size: small;
+  }
+
+  .register_right .input-group{
+    width: 20rem;
+  }
+  
+  /* Style for input-group elements within .register_right */
+  .register_right .input-group-text {
+    background: rgba(255, 255, 255, 0.2); 
+    border: none; 
+    border-radius: 5px; 
+  }
+  
+  /* COntact */
+  .contact_right{
+    width: 46%;
+    height: 50%;
+  }
+  .cfm{
+    border-bottom: 1px dashed rgba(212, 52, 254, 1);
+    width: 7rem;
+    padding-left: 30px;
+  }
+
+  .contact_right .all-caps-header{
+    font-size: 1.7em;
+  }
+
+  .contact_form .form-control{
+    border: 1px solid #fff; 
+    background-color: transparent;
+  }
+
+  .contact_form .form-control::placeholder{
+    color: rgba(255, 255, 255, 0.25);
+    font-size: small;
+  }
+
+  .contact_form .form-control option{
+    color: #fff;
+  }
+
+  .contact_form label{
+    margin-bottom: .7rem;
+    margin-top: 1rem;
+  }
+
+  /* Style the select element */
+#category:hover, #groupSize:hover {
+    background-color: rgba(212, 52, 254, 0.2); 
+    color: #212529; 
+    border-color: rgba(212, 52, 254, 1); 
+}
+
+/* Style the dropdown options */
+#category option, #groupSize option {
+    background-color: rgba(212, 52, 254, 0.2); 
+    color: #212529;
+}
+
+/* Style the checkbox */
+.checkbox-label input[type="checkbox"] {
+    display: none; /* Hide the default checkbox */
+}
+
+/* Style the custom checkbox */
+.checkbox-label input[type="checkbox"] + label::before {
+    content: ""; 
+    display: inline-block;
+    width: 16px; 
+    height: 16px; 
+    border: 1px solid #fff; 
+    background-color: transparent;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Style the custom checkbox when it's checked */
+.checkbox-label input[type="checkbox"]:checked + label::before {
+    content: "\2713"; 
+    font-size: 12px;
+    line-height: 20px;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: rgba(212, 52, 254, 1); 
+    background-color: transparent;
+}
+
+/* Register button */
+.register-button {
+    width: 100%;
+}

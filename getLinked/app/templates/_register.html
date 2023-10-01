@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="register d-flex justify-content-around align-items-center pt-3">
+        <!-- left side -->
+        <div class="register_left">
+            <h5 style="font-family: 'Clash Display', sans-serif;">Get in touch</h5>
+            <p>Contact<br>Information</p>
+            <p>27,Alara Street <br> Yaba 100012 <br> Lagos State</p>
+            <p>Call Us: 07067981819</p>
+            <p>we are open from Monday-Friday<br>08:00am - 05:00pm</p>
+
+            <p class="reg_share">Share on</p>
+            <div>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+        <!-- right side -->
+        <div class="register_right">
+            <p>Questions or need assistance? <br>Let us know about it?</p>
+            <div class="input-group mb-3">
+                <br>
+                <input type="text" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              </div>
+              
+              <div class="input-group">
+                <textarea class="form-control" style="height: 6rem;" aria-label="With textarea" placeholder="Message"></textarea>
+              </div>
+
+              <div class="">
+                <a href="{{ url_for('landing.register_page') }}"><button class="nav_bar_button" type="submit">Submit</button></a>
+              </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
